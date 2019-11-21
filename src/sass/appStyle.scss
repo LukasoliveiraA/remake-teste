@@ -1,0 +1,570 @@
+$primary_color: #222222;
+$second_color: #d09c52;
+$primary_font: 'Open Sans', sans-serif;
+$second_serif: sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.obj-cover {
+  object-fit: cover;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+/*header*/
+
+.top-head {
+  width: 100%;
+  height: 10px;
+  background-color: $primary_color;
+}
+
+header {
+  width: 1065px;
+  height: 215px;
+  margin: 0 auto;
+
+  nav {
+    width: 430px;
+    height: 40px;
+    margin: 0 auto;
+
+    ul {
+      float: left;
+      list-style: none;
+
+      li {
+        &:nth-of-type(1) {
+          padding: 17px 0px 0px 6px;
+        }
+
+        &:nth-of-type(2) {
+          padding: 17px 0px 0px 49px;
+        }
+
+        &:nth-of-type(3) {
+          padding: 17px 0px 0px 54px;
+        }
+
+        &:nth-of-type(4) {
+          padding: 17px 0px 0px 45px;
+        }
+
+        font-family: $primary_font;
+        font-size: 11px;
+        float: left;
+        display: inline;
+
+        a {
+          color: $primary_color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .d_logo {
+    width: 445px;
+    height: 80px;
+    margin: 50px auto;
+  }
+}
+
+/*conteudo*/
+
+.conteudo {
+  width: 1065px;
+  height: 1565px;
+  margin: 0 auto;
+
+  .lt_side {
+    width: 515px;
+    float: left;
+
+    .breads {
+      width: 100%;
+      height: 15px;
+
+      ul {
+        list-style: none;
+        float: left;
+
+        li {
+          list-style: none;
+          float: left;
+          font-family: $primary_font;
+          font-size: 11px;
+        }
+
+        &:last-child {
+          color: #cdcdcd;
+        }
+
+        li {
+          a {
+            color: $primary_color;
+            text-decoration: none;
+          }
+
+          span {
+            font-family: $primary_font;
+            font-size: 9px;
+            color: #d29d4e;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*######################################## bloco esquerdo ###########################################
+/*bloco esquerdo da página onde contém o produto*/
+
+
+
+.major_i {
+  width: 510px;
+  height: 900px;
+  margin-top: 17px;
+
+  .major_foto {
+    width: 100%;
+    height: 765px;
+  }
+
+  .major_grid {
+    width: 100%;
+    height: 130px;
+
+    .thumb {
+      width: 85px;
+      height: 127px;
+      float: left;
+      margin-top: 6px;
+
+      &:nth-of-type(1) {
+        margin-left: 0;
+      }
+
+      &:nth-of-type(2) {
+        margin-left: 10px;
+      }
+
+      &:nth-of-type(3) {
+        margin-left: 14px;
+      }
+
+      .thumb-catch {
+        width: 85px;
+        height: 127px;
+      }
+    }
+  }
+}
+
+/*#################################### Fim bloco esquerdo ###########################################*/
+
+/*######################################## bloco direito ############################################*/
+
+.rh_side {
+  width: 525px;
+  float: right;
+
+  .wrap-info {
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+
+    .st_ref {
+      width: 100%;
+      height: 15px;
+
+      p {
+        font-family: $primary_font;
+        color: #959595;
+        font-size: 10px;
+        margin: 2px;
+        font-weight: bold;
+      }
+    }
+
+    .medias {
+      width: 100%;
+      height: 20px;
+      margin-top: 20px;
+
+      ul {
+        list-style: none;
+
+        li {
+          float: left;
+          display: inline;
+          width: 41px;
+          color: #959595;
+        }
+      }
+    }
+  }
+}
+
+.dr_info {
+  width: 100%;
+  height: 750px;
+
+  .title_pre {
+    width: 100%;
+    height: 85px;
+    margin-top: 25px;
+
+    h1 {
+      font-weight: 100;
+      font-size: 45px;
+      line-height: 41px;
+      color: $primary_color;
+    }
+  }
+}
+
+/*Ajuste de preço*/
+
+.rh_side .wrap-info .dr_info {
+  .top_price {
+    width: 100%;
+    height: 90px;
+    margin-top: 27px;
+
+    p {
+      &.pre-line {
+        font-family: $primary_font;
+        font-size: 15px;
+        color: #a0a0a0;
+        text-decoration: line-through;
+      }
+
+      &.major-line {
+        font-family: $second_serif;
+        font-size: 32px;
+        color: $second_color;
+      }
+
+      &.downPayment {
+        font-family: $second_serif;
+        font-size: 13px;
+        color: #a0a0a0;
+        margin: 5px;
+      }
+    }
+  }
+
+  .form_wrap {
+    width: 100%;
+    margin-top: 5px;
+
+    form {
+      .form-group {
+        width: 100%;
+        margin-top: 7px;
+      }
+
+      select {
+        width: 165px;
+        height: 35px;
+        border: 2px solid #dadada;
+      }
+
+      .buttons-inline-wrap {
+        width: 100%;
+        height: 55px;
+        margin-top: 30px;
+
+        .check_bag {
+          width: 250px;
+          height: 55px;
+          float: left;
+          background-color: #951991;
+          color: #ffffff;
+          font-family: $primary_font;
+          font-weight: 100;
+          border: none;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #751272;
+          }
+        }
+
+        .WishList {
+          color: $primary_color;
+          font-family: $primary_font;
+          cursor: pointer;
+          font-weight: 500;
+          margin: 18px 36px;
+          float: left;
+        }
+      }
+    }
+  }
+
+  .description_prd {
+    width: 100%;
+    height: 205px;
+    margin-top: 30px;
+
+    p {
+      font-family: $primary_font;
+      color: #515151;
+      text-align: left;
+    }
+
+    ul.topic-less {
+      width: 490px;
+      float: right;
+      margin-top: 25px;
+
+      li {
+        font-family: $primary_font;
+        color: #515151;
+        text-align: left;
+      }
+    }
+  }
+
+  .pl-frete {
+    width: 100%;
+    margin-top: 30px;
+
+    p.fp-p {
+      font-family: $primary_font;
+      color: #515151;
+      text-align: left;
+      font-size: 11px;
+      margin-left: 5px;
+    }
+
+    .m-calc {
+      width: 100%;
+      height: 90px;
+      margin-top: 5px;
+
+      input {
+        width: 160px;
+        height: 40px;
+        border: 2px solid #dadada;
+        padding-left: 10px;
+      }
+
+      label {
+        font-family: $primary_font;
+        color: #0db89b;
+        text-align: left;
+        font-size: 12px;
+        margin-left: 5px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      p {
+        font-family: $primary_font;
+        color: $primary_color;
+        text-align: left;
+        font-size: 12px;
+        margin: 5px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/*fim do ajuste de preço*/
+
+
+/*#################################### Fim bloco da direira ###########################################*/
+
+/*#################################### bloco prateleira ###########################################*/
+/*################## bloco central da página onde contém mais produtos com slides #####################*/
+
+.ct_side {
+  width: 100%;
+  height: 535px;
+  margin-top: 80px;
+  float: left;
+
+  h3 {
+    font-family: $primary_font;
+    color: $primary_color;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .nth-under {
+    text-align: center;
+    width: 40px;
+    border: thin solid #cd943f;
+    margin: 15px auto;
+  }
+}
+
+/*slides*/
+
+.container-produto-dw {
+  width: 100%;
+  height: 480px;
+
+  .wrap-foto-pdp {
+    width: 100%;
+    height: 360px;
+  }
+
+  .title-pdp {
+    width: 100%;
+    height: 55px;
+
+    h2 {
+      font-family: 'Jomolhari', serif;
+      font-size: 19px;
+      text-align: left;
+      font-weight: 100;
+      color: $primary_color;
+      line-height: 28px;
+    }
+  }
+
+  .price-pdp {
+    width: 100%;
+    height: 40px;
+
+    p.pdp-1 {
+      text-align: left;
+      font-family: $primary_font;
+      color: $second_color;
+      font-size: 15px;
+
+      .paydown-pdp {
+        text-align: left;
+        font-family: $primary_font;
+        color: #a0a0a0;
+        font-size: 12px;
+      }
+
+      .p-off {
+        text-decoration: line-through;
+        color: #a0a0a0;
+      }
+    }
+  }
+}
+
+/*################################ Fim bloco prateleira ###########################################*/
+/*######################################### Footer ################################################*/
+
+footer {
+  width: 100%;
+  height: 347px;
+  border-top: 5px solid #00bca3;
+  margin-top: 85px;
+  background-color: $primary_color;
+
+  .wrap-footer {
+    width: 1070px;
+    height: 265px;
+    margin: 40px auto;
+
+    .dinamic-side {
+      width: 265px;
+      height: 120px;
+      float: left;
+
+      p {
+        font-family: $primary_font;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 100;
+        margin-top: 5px;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          list-style: none;
+          font-family: $primary_font;
+          font-weight: 100;
+          font-size: 13px;
+          line-height: 30px;
+
+          a {
+            text-decoration: none;
+            color: #959595;
+          }
+        }
+      }
+
+      .w-form {
+        width: 100%;
+        height: 85px;
+        margin-top: 5px;
+
+        input {
+          &[type=email] {
+            width: 213px;
+            height: 40px;
+            border: none;
+            background-color: #404040;
+            padding-left: 10px;
+            margin-left: 10px;
+            outline: none;
+            color: #ffffff;
+          }
+
+          &[type=submit] {
+            width: 105px;
+            height: 40px;
+            border: thin solid #ffffff;
+            background-color: $primary_color;
+            color: #ffffff;
+            margin: 5px 10px;
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .f_info-wrap {
+      width: 100%;
+      height: 75px;
+      margin-top: 65px;
+      float: left;
+
+      .f-wrap-down {
+        width: 460px;
+        height: 70px;
+        float: left;
+
+        p {
+          font-family: $primary_font;
+          color: #959595;
+          font-size: 10px;
+        }
+      }
+
+      .s-wrap-down {
+        width: 430px;
+        height: 75px;
+        float: left;
+
+        img {
+          float: right;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
+
+/*configuração padrão*/

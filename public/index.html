@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Produto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/9e5da7ca4f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- header -->
+	<div class="top-head"></div>
+	<header>
+		<nav>
+			<ul>
+				<li><i class="fas fa-search"></i>&nbsp;&nbsp;&nbsp;<a href="?">BUSCAR</a></li>
+				<li><a href="?">MINHA CONTA</a></li>
+				<li><a href="?">ENTRAR</a></li>
+				<li><i class="fas fa-shopping-bag"></i>&nbsp;&nbsp;<a href="?">SACOLA (0)</a></li>
+			</ul>
+		</nav>
+		<div class="d_logo">
+			<img id="srcLogo">
+		</div>
+	</header>
+	<!-- conteudo -->
+	<main class="conteudo">
+		<!-- bloco esquerdo da página onde contém o produto -->
+		<div class="lt_side">
+			<!-- link pão -->
+			<div class="breads">
+				<ul>
+					<li><a href="?">Home</a>&nbsp;<span><i class="fas fa-chevron-right"></i>&nbsp;</span></li>
+					<li><a href="?">Roupas</a>&nbsp;&nbsp;<span><i class="fas fa-chevron-right"></i>&nbsp;</span></li>
+					<li><a href="?">Vestidos</a>&nbsp;&nbsp; <span><i class="fas fa-chevron-right"></i>&nbsp;</span></li>
+					<li>Vestido Must-Have Sweatshirt</li>
+				</ul>
+			</div>
+			<!-- produto com thumbs -->
+			<!-- wrap produto -->
+			<div class="major_i">
+				<div class="major_foto">
+					<div class="ZoomWrap">
+						<span class='zoom' id='ex1'>
+							<img id="imageStandard" width='510' height='765' alt='Daisy on the Ohoopee'/>
+						</span>
+					</div>
+				</div>
+				<!-- thumbs -->
+				<div class="major_grid">
+					<div class="thumb">
+						<img id="thumb-v1" class="thumb-catch obj-cover standard" v-standard="v1">
+					</div>
+					<div class="thumb">
+						<img id="thumb-v2" class="thumb-catch obj-cover standard" v-standard="v2">
+					</div>
+					<div class="thumb">
+						<img id="thumb-v3" class="thumb-catch obj-cover standard" v-standard="v3">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- bloco direito da página onde contém o as informações do produto -->
+		<div class="rh_side">
+			<div class="wrap-info">
+				<div class="st_ref">
+					<p>Ref.: MO8992</p>
+				</div>
+				<div class="medias">
+					<ul>
+						<li><i class="fab fa-facebook-f"></i></li>
+						<li><i class="fab fa-twitter"></i></li>
+						<li><i class="fab fa-pinterest"></i></li>
+					</ul>
+				</div>
+				<!-- informações do produto -->
+				<div class="dr_info">
+					<div class="title_pre">
+						<h1>Vestido Must-Have Sweatshirt</h1>
+					</div>
+					<div class="top_price">
+						<p class="pre-line">R$22,80</p>
+						<p class="major-line">R$15,00</p>
+						<p class="downPayment">3x de R$ 5,00 s/juros</p>
+					</div>
+					<div class="form_wrap">
+						<form action="?">
+							<label class="label">TAMANHO</label>
+							<div class="form-group">
+								<select name="sizes">
+									<option value="Tam. 0">Tam. 0</option>
+									<option value="Tam. 1">Tam. 1</option>
+									<option value="Tam. 2">Tam. 2</option>
+									<option value="Tam. 3">Tam. 3</option>
+									<option value="Tam. 4">Tam. 4</option>
+									<option value="Tam. 5">Tam. 5</option>
+									<option value="Tam. 6">Tam. 6</option>
+									<option value="Tam. 7">Tam. 7</option>
+									<option value="Tam. 8">Tam. 8</option>
+									<option value="Tam. 9">Tam. 9</option>
+									<option value="Tam. 10">Tam. 10</option>
+									<option value="Tam. 11">Tam. 11</option>
+									<option value="Tam. 12">Tam. 12</option>
+									<option value="Tam. 13">Tam. 13</option>
+									<option value="Tam. 14">Tam. 14</option>
+									<option value="Tam. 15">Tam. 15</option>
+									<option value="Tam. 16">Tam. 16</option>
+									<option value="Tam. 17" selected>Tam. 17</option>
+									<option value="Tam. 18">Tam. 18</option>
+									<option value="Tam. 19">Tam. 19</option>
+								</select>
+								<div class="buttons-inline-wrap">
+									<button type="submit" class="check_bag">ADICIONAR À SACOLA</button>
+									<p class="WishList"><i class="far fa-heart clear"></i><span style="font-size: 14px; margin-left: 8px;" class="clear">Lista de Desejos</span></p>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- Descrição do produto -->
+					<div class="description_prd">
+						<p>
+							A French terry sweatshirt dress featuring long reglan sleeves. Round neckline.
+							Banded trim. Knit. Lightweight.
+						</p>
+						<ul class="topic-less">
+							<li>34" approx. lemgth from high point shoulder to hem, 38" chest, 36" wais, 30" sleeve length from high point shoulder</li>
+							<li>Measured from Samll</li>
+							<li>61% cotton, 39% viscose</li>
+							<li>Hand wash cold, dry flat</li>
+							<li>Imported</li>
+						</ul>
+					</div>
+					<div class="pl-frete">
+						<p class="fp-p">FRETE E PRAZO</p>
+						<div class="m-calc">
+							<input type="text" name="n-calc" value="22271-100"> <label class="action">Calcular</label>
+							<p>
+								PAC: R$ 18,30 - 7 dias úteis
+								<br/>
+								SEDEX: 26,00 - 4dias úteis
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- bloco central da página onde contém mlais produtos com slides -->
+		<div class="ct_side">
+			<h3>APROVEITE TAMBÉM <br/> <div class="nth-under"></div></h3>
+			<!-- Slider main container -->
+			<div class="swiper-container">
+			    <!-- Additional required wrapper -->
+			    <div class="swiper-wrapper">
+			        <!-- Slides -->
+			        <div class="swiper-slide" style="margin-top: 25px">
+			        	<a href="?">
+				        	<div class="container-produto-dw">
+				        		<div class="wrap-foto-pdp">
+				        			<img id="prateleira-v1" class="obj-cover" width="245" height="360">
+				        		</div>
+				        		<div class="title-pdp">
+				        			<h2>Saia Global Girl Bodycon</h2>
+				        		</div>
+				        		<div class="price-pdp">
+				        			<p class="pdp-1">R$30,00<br/><span>3x de R$5,00 s/juros</span></p>
+				        		</div>
+				        	</div>
+			        	</a>
+			        </div>
+
+			        <div class="swiper-slide" style="margin-top: 25px">
+			        	<a href="?">
+				        	<div class="container-produto-dw">
+				        		<div class="wrap-foto-pdp">
+				        			<img id="prateleira-v2" class="obj-cover" width="245" height="360">
+				        		</div>
+				        		<div class="title-pdp">
+				        			<h2>Vestido Must-Have Sweatshirt</h2>
+				        		</div>
+				        		<div class="price-pdp">
+				        			<p class="pdp-1">R$15,00<br/><span>3x de R$5,00 s/juros</span></p>
+				        		</div>
+				        	</div>
+			        	</a>
+			        </div>
+
+			        <div class="swiper-slide" style="margin-top: 25px">
+			        	<a href="?">
+				        	<div class="container-produto-dw">
+				        		<div class="wrap-foto-pdp">
+				        			<img id="prateleira-v3" class="obj-cover" width="245" height="360">
+				        		</div>
+				        		<div class="title-pdp">
+				        			<h2>Mini Saia Day Dreamer Abstract</h2>
+				        		</div>
+				        		<div class="price-pdp">
+				        			<p class="pdp-1">R$15,00<br/><span>3x de R$5,00 s/juros</span></p>
+				        		</div>
+				        	</div>
+			        	</a>
+			        </div>
+
+			        <div class="swiper-slide" style="margin-top: 25px">
+			        	<a href="?">
+				        	<div class="container-produto-dw">
+				        		<div class="wrap-foto-pdp">
+				        			<img id="prateleira-v4" class="obj-cover" width="245" height="360">
+				        		</div>
+				        		<div class="title-pdp">
+				        			<h2>Vestido Opulent A-Line</h2>
+				        		</div>
+				        		<div class="price-pdp">
+
+				        			<p class="pdp-1"><span class="p-off">R$45,80</span> R$30,00<br/><span class="paydown-pdp">3x de R$5,00 s/juros</span></p>
+				        		</div>
+				        	</div>
+			        	</a>
+			        </div>
+
+
+			        <!-- Segundo bloco slide prateleira -->
+
+			         <div class="swiper-slide" style="margin-top: 25px">
+			         	<a href="?">
+				        	<div class="container-produto-dw">
+				        		<div class="wrap-foto-pdp">
+				        			<img id="prateleira-v5" class="obj-cover" width="245" height="360">
+				        		</div>
+				        		<div class="title-pdp">
+				        			<h2>Saia Global Girl Bodycon</h2>
+				        		</div>
+				        		<div class="price-pdp">
+				        			<p class="pdp-1">R$30,00<br/><span>3x de R$5,00 s/juros</span></p>
+				        		</div>
+				        	</div>
+			        	</a>
+			        </div>
+
+			        <div class="swiper-slide" style="margin-top: 25px">
+			        	<a href="?">
+				        	<div class="container-produto-dw">
+				        		<div class="wrap-foto-pdp">
+				        			<img id="prateleira-v6" class="obj-cover" width="245" height="360">
+				        		</div>
+				        		<div class="title-pdp">
+				        			<h2>Vestido Must-Have Sweatshirt</h2>
+				        		</div>
+				        		<div class="price-pdp">
+				        			<p class="pdp-1">R$15,00<br/><span>3x de R$5,00 s/juros</span></p>
+				        		</div>
+				        	</div>
+			        	</a>
+			        </div>
+
+			        <div class="swiper-slide" style="margin-top: 25px">
+			        	<a href="?">
+				        	<div class="container-produto-dw">
+				        		<div class="wrap-foto-pdp">
+				        			<img id="prateleira-v7" class="obj-cover" width="245" height="360">
+				        		</div>
+				        		<div class="title-pdp">
+				        			<h2>Mini Saia Day Dreamer Abstract</h2>
+				        		</div>
+				        		<div class="price-pdp">
+				        			<p class="pdp-1">R$15,00<br/><span>3x de R$5,00 s/juros</span></p>
+				        		</div>
+				        	</div>
+			        	</a>
+			        </div>
+
+			        <div class="swiper-slide" style="margin-top: 25px">
+			        	<a href="?">
+				        	<div class="container-produto-dw">
+				        		<div class="wrap-foto-pdp">
+				        			<img id="prateleira-v8" class="obj-cover" width="245" height="360">
+				        		</div>
+				        		<div class="title-pdp">
+				        			<h2>Vestido Opulent A-Line</h2>
+				        		</div>
+				        		<div class="price-pdp">
+
+				        			<p class="pdp-1"><span class="p-off">R$45,80</span> R$30,00<br/><span class="paydown-pdp">3x de R$5,00 s/juros</span></p>
+				        		</div>
+				        	</div>
+			        	</a>
+			        </div>
+			    </div>
+			    <!-- Se for usar arrows -->
+			   <!--  <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div> -->			  
+			</div>
+		</div>
+	</main>
+	<footer>
+		<!-- footer nav -->
+		<div class="wrap-footer">
+			<div class="dinamic-side">
+				<p>INSTITUCIONAL</p>
+				<ul>
+					<li><a href="?">Quem somos</a></li>
+					<li><a href="?">Contato</a></li>
+				</ul>
+			</div>
+			<div class="dinamic-side">
+				<p>AJUDA & SUPORTE</p>
+				<ul>
+					<li><a href="?">Quero comprar</a></li>
+					<li><a href="?">Termos e condições</a></li>
+					<li><a href="?">Procon RJ</a></li>
+				</ul>
+			</div>
+			<div class="dinamic-side">
+				<p class="ml-10">NEWSLETTER</p>
+				<form method="post">
+					<div class="w-form">
+						<input type="email" required autocomplete="off" name="newsletter" placeholder="Seu email">
+						<input type="submit" value="ASSINAR">
+					</div>
+				</form>
+			</div>
+			<div class="dinamic-side">
+				<p class="ml-10">REDES SOCIAIS</p>
+				<ul class="ml-10">
+					<li><a href="?">Facebook</a></li>
+					<li><a href="?">Instagram</a></li>
+					<li><a href="?">Twitter</a></li>
+				</ul>
+			</div>
+			<div class="f_info-wrap">
+				<div class="f-wrap-down">
+					<img id="logoFooter">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+				<div class="s-wrap-down">
+					<img id="payment">
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('#ex1').zoom();
+		});
+		  var swiper = new Swiper('.swiper-container', {
+		      slidesPerView: 4,
+		      spaceBetween: 20,
+		      freeMode: true,
+		      grabCursor: true,
+		      autoplay: {
+		        delay: 2500,
+		        disableOnInteraction: false,
+		      },
+		      pagination: {
+		        el: '.swiper-pagination',
+		        clickable: true,
+		      },
+		    });
+	</script>
+</body>
+</html>
